@@ -39,6 +39,7 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\Asus\Downloads\Bunifu.UI.Form.1._9.0.1_YasDL.com\Bunifu.UI.Form.1.﻿9.0.1_YasDL.com\Bunifu UI WinForms 1.9.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\Asus\Downloads\Guna_UI_Framework_Ultimate_2.0.0.1_Downloadly.ir\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
