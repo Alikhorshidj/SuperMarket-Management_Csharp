@@ -16,5 +16,10 @@ namespace SuperMarket
         {
             InitializeComponent();
         }
+
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
