@@ -33,8 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.9.0.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>C:\Users\Asus\Downloads\Bunifu.UI.Form.1._9.0.1_YasDL.com\Bunifu.UI.Form.1.﻿9.0.1_YasDL.com\Bunifu UI WinForms 1.9.0.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>C:\Users\Asus\Downloads\Bunifu.UI.Form.1._9.0.1_YasDL.com\Bunifu.UI.Form.1.﻿9.0.1_YasDL.com\Bunifu UI WinForms 1.9.0.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\Asus\Downloads\Bunifu.UI.Form.1._9.0.1_YasDL.com\Bunifu.UI.Form.1.﻿9.0.1_YasDL.com\Bunifu UI WinForms 1.9.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -67,6 +71,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splashcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashcs.Designer.cs">
+      <DependentUpon>Splashcs.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +90,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Splashcs.resx">
+      <DependentUpon>Splashcs.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
