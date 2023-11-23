@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Myprogress.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="MyProgress.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAy0AAAAfCAYAAADqSiI9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFRSURBVHhe7du9TQNBFIXRVwYhISElEDokJCSkBIfEu4so
-        h5KgA4hmmP2xjRbyeUjnSke7sqeBT2OHmZmZmZnZv1kd4qqOcdc8AwAA9FCGONTXuN4y5bIWLLdlivc6
-        RQUAAOiptclnez5uubLesJQxPvYHAQAAemmN8jVfrqzRMsX9/gAAAEA3L+f34xot82/H9ocAAAB6a60i
-        WgAAgLxECwAAkJpoAQAAUhMtAABAaqIFAABITbQAAACpiRYAACA10QIAAKQmWgAAgNRECwAAkJpoAQAA
-        UhMtAABAaqIFAABITbQAAACpiRYAACA10QIAAKQmWgAAgNRECwAAkJpoAQAAUhMtAABAaqIFAABI7RQt
-        ZYynPw8AAAD0dL5pmeLm15cAAACdlCnK8hzisETLvPbB8echAACAnlq4vG25ctlcMcv/WwAAADoqYzys
-        lRLxDbcjQ0oO9rS4AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAssAAAAlCAYAAAC02aQAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVHhe7doxSsRAGIbhHMPSZidiJWxGW8stRSdqaekR
+        ttxbeSS9wVqpySa4sOYH+3k+eAhh5gAvIY2ZmZmZmf1jl7k/a9cPt23udwAAUJuUy6a9eTqf8/i4Ve6v
+        Ulfeh0vfAABQra7sh+fLnMnTF+UhlD/+XAQAgBp15XP8mHyI5XT9eLd4CQAAKpVyvz3E8vAy/qOxeAkA
+        ACq1E8sAALBMLAMAQEAsAwBAQCwDAEBALAMAQEAsAwBAQCwDAEBALAMAQEAsAwBAQCwDAEBALAMAQEAs
+        AwBAQCwDAEBALAMAQEAsAwBAQCwDAEBALAMAQEAsAwBAQCwDAEBALAMAQEAsAwBAQCwDAEBALAMAQEAs
+        AwBAQCwDAEBALAMAQEAsAwBA4DeWX08OAACgdlMsp/X9xcIhAADU6Gt8plw2h1gel3K/PbkEAAB16srb
+        nMnHjfU8HI7/LwMAQJVWXXme6rhpfgBKKn74AbcTswAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

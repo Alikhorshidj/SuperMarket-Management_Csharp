@@ -17,6 +17,6 @@ E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.pdb
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\DevComponents.DotNetBar2.dll
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\DevComponents.DotNetBar2.xml
-E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.Splashcs.resources
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.Splash.resources
