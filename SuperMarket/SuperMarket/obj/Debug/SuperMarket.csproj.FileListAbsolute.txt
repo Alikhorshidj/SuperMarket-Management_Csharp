@@ -24,3 +24,4 @@ E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.ProductForm.resources

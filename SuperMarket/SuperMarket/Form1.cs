@@ -46,5 +46,12 @@ namespace SuperMarket
         {
             Application.Exit();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            ProductForm productForm = new ProductForm();
+            this.Hide();
+            productForm.Show();
+        }
     }
 }
