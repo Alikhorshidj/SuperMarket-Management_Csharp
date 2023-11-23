@@ -74,6 +74,16 @@ namespace SuperMarket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_for_grocery_store_vector_21609812 {
+            get {
+                object obj = ResourceManager.GetObject("logo-for-grocery-store-vector-21609812", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pngtree_taobao_technology_mobile_phone_digital_creative_positioning_supermarket_car_poster_background_image_128825 {
             get {
                 object obj = ResourceManager.GetObject("pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-c" +

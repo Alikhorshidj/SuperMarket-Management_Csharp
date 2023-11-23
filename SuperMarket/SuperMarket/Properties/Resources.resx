@@ -130,4 +130,7 @@
   <data name="pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_1288251" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo-for-grocery-store-vector-21609812" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-for-grocery-store-vector-21609812.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

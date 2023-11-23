@@ -28,5 +28,24 @@ namespace SuperMarket
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SellerForm sellerForm = new SellerForm();
+            this.Hide();
+            sellerForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CategoryForm categoryForm = new CategoryForm();
+            this.Hide();
+            categoryForm.Show();
+        }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
