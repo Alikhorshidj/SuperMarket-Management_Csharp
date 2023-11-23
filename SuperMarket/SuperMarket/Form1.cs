@@ -42,16 +42,18 @@ namespace SuperMarket
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             ProductForm productForm = new ProductForm();
             this.Hide();
             productForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

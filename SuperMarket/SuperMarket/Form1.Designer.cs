@@ -36,10 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bunifuMaterialTextbox1
@@ -135,17 +135,6 @@
             this.comboBox1.TabIndex = 6;
             this.comboBox1.Text = "Select Role";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Impact", 21.75F);
-            this.label4.Location = new System.Drawing.Point(733, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 36);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // guna2CircleButton1
             // 
             this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
@@ -197,15 +186,29 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Impact", 21.75F);
+            this.button5.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button5.Location = new System.Drawing.Point(662, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(40, 48);
+            this.button5.TabIndex = 11;
+            this.button5.Text = "X";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(773, 375);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -231,10 +234,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.Button button5;
     }
 }
 

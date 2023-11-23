@@ -17,7 +17,14 @@ namespace SuperMarket
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
