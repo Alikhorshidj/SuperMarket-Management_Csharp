@@ -70,5 +70,37 @@ namespace SuperMarket.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_taobao_technology_mobile_phone_digital_creative_positioning_supermarket_car_poster_background_image_128825 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-c" +
+                        "ar-poster-background-image_128825", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_taobao_technology_mobile_phone_digital_creative_positioning_supermarket_car_poster_background_image_1288251 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-c" +
+                        "ar-poster-background-image_1288251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_in_grocery_store_concept_vector_12655460 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-in-grocery-store-concept-vector-12655460", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
