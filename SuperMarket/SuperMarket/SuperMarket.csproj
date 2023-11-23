@@ -152,5 +152,8 @@
   <ItemGroup>
     <None Include="Resources\pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-for-grocery-store-vector-21609812.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

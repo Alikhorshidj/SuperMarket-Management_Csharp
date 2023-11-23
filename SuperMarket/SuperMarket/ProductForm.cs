@@ -47,5 +47,10 @@ namespace SuperMarket
         {
 
         }
+
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
