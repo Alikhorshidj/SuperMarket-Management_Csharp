@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SuperMarket
 {
@@ -16,6 +17,11 @@ namespace SuperMarket
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
+
+        public object CatId { get; private set; }
+        public object CatName { get; private set; }
+        public object CatDesc { get; private set; }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -34,6 +40,20 @@ namespace SuperMarket
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "insert into CategoryTb1 values(" + CatId.Text + ",'" + CatName.Text + "','" + CatDesc.Text + "')";
+                con.Close();
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
