@@ -38,7 +38,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.CatDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CatDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.CatDescTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -108,7 +108,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkOrange;
             this.guna2Panel1.Controls.Add(this.CatDGV);
-            this.guna2Panel1.Controls.Add(this.bunifuThinButton23);
+            this.guna2Panel1.Controls.Add(this.CatDelete);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton21);
             this.guna2Panel1.Controls.Add(this.CatDescTb);
@@ -182,30 +182,31 @@
             this.CatDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.CatDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // bunifuThinButton23
+            // CatDelete
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "DELETE";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(235, 273);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(84, 49);
-            this.bunifuThinButton23.TabIndex = 17;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CatDelete.ActiveBorderThickness = 1;
+            this.CatDelete.ActiveCornerRadius = 20;
+            this.CatDelete.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.CatDelete.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.CatDelete.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.CatDelete.BackColor = System.Drawing.Color.DarkOrange;
+            this.CatDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CatDelete.BackgroundImage")));
+            this.CatDelete.ButtonText = "DELETE";
+            this.CatDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CatDelete.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CatDelete.IdleBorderThickness = 1;
+            this.CatDelete.IdleCornerRadius = 20;
+            this.CatDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatDelete.IdleForecolor = System.Drawing.Color.Transparent;
+            this.CatDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatDelete.Location = new System.Drawing.Point(235, 273);
+            this.CatDelete.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.CatDelete.Name = "CatDelete";
+            this.CatDelete.Size = new System.Drawing.Size(84, 49);
+            this.CatDelete.TabIndex = 17;
+            this.CatDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CatDelete.Click += new System.EventHandler(this.CatDelete_Click);
             // 
             // bunifuThinButton22
             // 
@@ -402,7 +403,7 @@
         private System.Windows.Forms.Button button5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2DataGridView CatDGV;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuThinButton2 CatDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CatDescTb;

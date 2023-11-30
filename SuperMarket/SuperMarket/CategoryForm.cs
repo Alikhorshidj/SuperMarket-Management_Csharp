@@ -49,6 +49,7 @@ namespace SuperMarket
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Category Added Successfuly");
                 con.Close();
+                populate();
 
             }catch(Exception ex)
             {
@@ -78,6 +79,33 @@ namespace SuperMarket
         private void CategoryForm_Load(object sender, EventArgs e)
         {
             populate();
+        }
+
+        private void CatDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CatIDTb.Text == "")
+                {
+                    MessageBox.Show("Select The Category to Delete");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "delete from CategoryTb1 where CatId=" + CatIDTb.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Deleted Successfully");
+                    con.Close();
+                    populate();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
