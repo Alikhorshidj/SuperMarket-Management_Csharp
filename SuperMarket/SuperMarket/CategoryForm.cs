@@ -45,13 +45,39 @@ namespace SuperMarket
             {
                 con.Open();
                 string query = "insert into CategoryTb1 values(" + CatIDTb.Text + ",'" + CatNameTb.Text + "','" + CatDescTb.Text + "')";
-
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Category Added Successfuly");
                 con.Close();
 
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from CategoryTb1";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CatDGV.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CatIDTb.Text = CatDGV.SelectedRows[0].Cells[0].Value.ToString();
+            CatNameTb.Text = CatDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CatDescTb.Text = CatDGV.SelectedRows[0].Cells[2].Value.ToString();
+        }
+
+        private void CategoryForm_Load(object sender, EventArgs e)
+        {
+            populate();
         }
     }
 }
