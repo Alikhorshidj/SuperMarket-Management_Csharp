@@ -41,9 +41,9 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CatDescTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CatNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CatIDTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -111,9 +111,9 @@
             this.guna2Panel1.Controls.Add(this.bunifuThinButton23);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton21);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox3);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.guna2Panel1.Controls.Add(this.CatDescTb);
+            this.guna2Panel1.Controls.Add(this.CatNameTb);
+            this.guna2Panel1.Controls.Add(this.CatIDTb);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.label2);
@@ -257,74 +257,74 @@
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // bunifuMaterialTextbox3
+            // CatDescTb
             // 
-            this.bunifuMaterialTextbox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox3.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(169, 203);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.MaxLength = 32767;
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox3.TabIndex = 12;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CatDescTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.CatDescTb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.CatDescTb.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.CatDescTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CatDescTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CatDescTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CatDescTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CatDescTb.HintText = "";
+            this.CatDescTb.isPassword = false;
+            this.CatDescTb.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.CatDescTb.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatDescTb.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.CatDescTb.LineThickness = 3;
+            this.CatDescTb.Location = new System.Drawing.Point(169, 203);
+            this.CatDescTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CatDescTb.MaxLength = 32767;
+            this.CatDescTb.Name = "CatDescTb";
+            this.CatDescTb.Size = new System.Drawing.Size(169, 33);
+            this.CatDescTb.TabIndex = 12;
+            this.CatDescTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox2
+            // CatNameTb
             // 
-            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(169, 149);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.MaxLength = 32767;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox2.TabIndex = 11;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CatNameTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.CatNameTb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.CatNameTb.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.CatNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CatNameTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CatNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CatNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CatNameTb.HintText = "";
+            this.CatNameTb.isPassword = false;
+            this.CatNameTb.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.CatNameTb.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatNameTb.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.CatNameTb.LineThickness = 3;
+            this.CatNameTb.Location = new System.Drawing.Point(169, 149);
+            this.CatNameTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CatNameTb.MaxLength = 32767;
+            this.CatNameTb.Name = "CatNameTb";
+            this.CatNameTb.Size = new System.Drawing.Size(169, 33);
+            this.CatNameTb.TabIndex = 11;
+            this.CatNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox1
+            // CatIDTb
             // 
-            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(169, 97);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.MaxLength = 32767;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 10;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CatIDTb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.CatIDTb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.CatIDTb.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.CatIDTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CatIDTb.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CatIDTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CatIDTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CatIDTb.HintText = "";
+            this.CatIDTb.isPassword = false;
+            this.CatIDTb.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.CatIDTb.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatIDTb.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.CatIDTb.LineThickness = 3;
+            this.CatIDTb.Location = new System.Drawing.Point(169, 97);
+            this.CatIDTb.Margin = new System.Windows.Forms.Padding(4);
+            this.CatIDTb.MaxLength = 32767;
+            this.CatIDTb.Name = "CatIDTb";
+            this.CatIDTb.Size = new System.Drawing.Size(169, 33);
+            this.CatIDTb.TabIndex = 10;
+            this.CatIDTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label3
             // 
@@ -403,9 +403,9 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CatDescTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CatNameTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CatIDTb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

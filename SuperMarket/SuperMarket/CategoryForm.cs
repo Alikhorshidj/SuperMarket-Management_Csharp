@@ -19,9 +19,6 @@ namespace SuperMarket
         }
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
 
-        public object CatId { get; private set; }
-        public object CatName { get; private set; }
-        public object CatDesc { get; private set; }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -47,7 +44,8 @@ namespace SuperMarket
             try
             {
                 con.Open();
-                string query = "insert into CategoryTb1 values(" + CatId.Text + ",'" + CatName.Text + "','" + CatDesc.Text + "')";
+                string query = "insert into CategoryTb1 values(" + CatIDTb.Text + ",'" + CatNameTb.Text + "','" + CatDescTb.Text + "')";
+
                 con.Close();
 
             }catch(Exception ex)
