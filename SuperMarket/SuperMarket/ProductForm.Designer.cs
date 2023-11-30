@@ -39,7 +39,7 @@
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CatCb = new System.Windows.Forms.ComboBox();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -67,7 +67,7 @@
             this.guna2Panel1.Controls.Add(this.bunifuThinButton23);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton21);
-            this.guna2Panel1.Controls.Add(this.comboBox1);
+            this.guna2Panel1.Controls.Add(this.CatCb);
             this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox4);
             this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox3);
             this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox2);
@@ -254,18 +254,18 @@
             this.bunifuThinButton21.TabIndex = 15;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // CatCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CatCb.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatCb.FormattingEnabled = true;
+            this.CatCb.Items.AddRange(new object[] {
             "ADMIN",
             "SELLER"});
-            this.comboBox1.Location = new System.Drawing.Point(139, 319);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 31);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.Text = "Select Category";
+            this.CatCb.Location = new System.Drawing.Point(139, 319);
+            this.CatCb.Name = "CatCb";
+            this.CatCb.Size = new System.Drawing.Size(169, 31);
+            this.CatCb.TabIndex = 14;
+            this.CatCb.Text = "Select Category";
             // 
             // bunifuMaterialTextbox4
             // 
@@ -516,7 +516,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CatCb;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;

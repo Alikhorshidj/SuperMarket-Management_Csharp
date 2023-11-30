@@ -107,5 +107,32 @@ namespace SuperMarket
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void CatEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CatIDTb.Text == "" || CatNameTb.Text == "" || CatDescTb.Text == "" )
+                {
+                    MessageBox.Show("Missing Informationa");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "update CategoryTb1 set CatName='" + CatNameTb.Text + "', CatDesc='" + CatDescTb.Text + "' where CatId=" + CatIDTb.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Category Successfully Update");
+                    con.Close();
+                    populate();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

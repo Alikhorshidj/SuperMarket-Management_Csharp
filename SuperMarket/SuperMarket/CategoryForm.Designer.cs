@@ -39,7 +39,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.CatDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.CatDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CatEdit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.CatDescTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.CatNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -109,7 +109,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkOrange;
             this.guna2Panel1.Controls.Add(this.CatDGV);
             this.guna2Panel1.Controls.Add(this.CatDelete);
-            this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
+            this.guna2Panel1.Controls.Add(this.CatEdit);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton21);
             this.guna2Panel1.Controls.Add(this.CatDescTb);
             this.guna2Panel1.Controls.Add(this.CatNameTb);
@@ -208,30 +208,31 @@
             this.CatDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CatDelete.Click += new System.EventHandler(this.CatDelete_Click);
             // 
-            // bunifuThinButton22
+            // CatEdit
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "EDIT";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(124, 273);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(84, 49);
-            this.bunifuThinButton22.TabIndex = 16;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CatEdit.ActiveBorderThickness = 1;
+            this.CatEdit.ActiveCornerRadius = 20;
+            this.CatEdit.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.CatEdit.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.CatEdit.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.CatEdit.BackColor = System.Drawing.Color.DarkOrange;
+            this.CatEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CatEdit.BackgroundImage")));
+            this.CatEdit.ButtonText = "EDIT";
+            this.CatEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CatEdit.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CatEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.CatEdit.IdleBorderThickness = 1;
+            this.CatEdit.IdleCornerRadius = 20;
+            this.CatEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatEdit.IdleForecolor = System.Drawing.Color.Transparent;
+            this.CatEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.CatEdit.Location = new System.Drawing.Point(124, 273);
+            this.CatEdit.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.CatEdit.Name = "CatEdit";
+            this.CatEdit.Size = new System.Drawing.Size(84, 49);
+            this.CatEdit.TabIndex = 16;
+            this.CatEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CatEdit.Click += new System.EventHandler(this.CatEdit_Click);
             // 
             // bunifuThinButton21
             // 
@@ -404,7 +405,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2DataGridView CatDGV;
         private Bunifu.Framework.UI.BunifuThinButton2 CatDelete;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 CatEdit;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CatDescTb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CatNameTb;

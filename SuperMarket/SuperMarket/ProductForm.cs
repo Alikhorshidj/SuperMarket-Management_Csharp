@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SuperMarket
 {
@@ -16,6 +17,43 @@ namespace SuperMarket
         {
             InitializeComponent();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
+
+        private void FillCombo()
+        {
+          //This Metod Will bind the ComboBox with the Database
+          con.Open();
+            SqlCommand cmd = new SqlCommand("select CatName from CategoryTb1", con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CatName", typeof(string));
+            dt.Load(rdr);
+            CatCb.ValueMember = "CatName";
+            CatCb.DataSource = dt;
+          con.Close();
+
+        }
+
+        private void ProductForm_Load(object sender, EventArgs e)
+        {
+            FillCombo();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,11 +82,6 @@ namespace SuperMarket
         }
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ProductForm_Load(object sender, EventArgs e)
         {
 
         }
