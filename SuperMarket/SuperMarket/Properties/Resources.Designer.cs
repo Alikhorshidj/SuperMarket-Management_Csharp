@@ -63,6 +63,26 @@ namespace SuperMarket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1212 {
+            get {
+                object obj = ResourceManager.GetObject("1212", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _13131 {
+            get {
+                object obj = ResourceManager.GetObject("13131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_web_development_e_commerce_magento_online_shopping_infographics_5ace4d47be5123_6369218815234696397796 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-web-development-e-commerce-magento-online-shopping-infographics-5ace4d47b" +
@@ -109,6 +129,26 @@ namespace SuperMarket.Properties {
         internal static System.Drawing.Bitmap shopping_in_grocery_store_concept_vector_12655460 {
             get {
                 object obj = ResourceManager.GetObject("shopping-in-grocery-store-concept-vector-12655460", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_in_grocery_store_concept_vector_12655460__Small___Phone_ {
+            get {
+                object obj = ResourceManager.GetObject("shopping-in-grocery-store-concept-vector-12655460 (Small) (Phone)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_in_grocery_store_concept_vector_126554601 {
+            get {
+                object obj = ResourceManager.GetObject("shopping-in-grocery-store-concept-vector-126554601", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

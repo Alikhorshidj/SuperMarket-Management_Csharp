@@ -118,19 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="1212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1212.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_1288251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-in-grocery-store-concept-vector-126554601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-in-grocery-store-concept-vector-126554601.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-in-grocery-store-concept-vector-12655460" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-in-grocery-store-concept-vector-12655460.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-web-development-e-commerce-magento-online-shopping-infographics-5ace4d47be5123.6369218815234696397796" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-web-development-e-commerce-magento-online-shopping-infographics-5ace4d47be5123.6369218815234696397796.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shopping-in-grocery-store-concept-vector-12655460" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shopping-in-grocery-store-concept-vector-12655460.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_1288251" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-taobao-technology-mobile-phone-digital-creative-positioning-supermarket-car-poster-background-image_128825.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo-for-grocery-store-vector-21609812" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-for-grocery-store-vector-21609812.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-in-grocery-store-concept-vector-12655460 (Small) (Phone)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-in-grocery-store-concept-vector-12655460 (Small) (Phone).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="13131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13131.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
