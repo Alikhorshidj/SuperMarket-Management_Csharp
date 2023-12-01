@@ -40,5 +40,10 @@ namespace SuperMarket
         {
             Application.Exit();
         }
+
+        private void reflectionImage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

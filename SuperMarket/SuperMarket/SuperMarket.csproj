@@ -155,5 +155,17 @@
   <ItemGroup>
     <None Include="Resources\logo-for-grocery-store-vector-21609812.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-in-grocery-store-concept-vector-126554601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-in-grocery-store-concept-vector-12655460 %28Small%29 %28Phone%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13131.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
