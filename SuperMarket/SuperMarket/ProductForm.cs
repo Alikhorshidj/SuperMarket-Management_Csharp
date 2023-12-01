@@ -37,6 +37,38 @@ namespace SuperMarket
         private void ProductForm_Load(object sender, EventArgs e)
         {
             FillCombo();
+            populate();
+        }
+
+        private void populate()
+        {
+            con.Open();
+            string query = "select * from ProduvtTb2";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ProdDGV.DataSource = ds.Tables[0];
+            con.Close();
+
+        }
+
+        private void ProdAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "insert into ProduvtTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "','" + ProdQty.Text + "','"+ ProdPrice.Text +"')";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Product Added Successfuly");
+                con.Close();
+                populate();
+
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
@@ -83,6 +115,15 @@ namespace SuperMarket
 
         private void guna2ImageButton2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void ProdDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProdId.Text = ProdDGV.SelectedRows[0].Cells[0].Value.ToString();
+            ProdName.Text = ProdDGV.SelectedRows[0].Cells[1].Value.ToString();
+            ProdQty.Text = ProdDGV.SelectedRows[0].Cells[2].Value.ToString();
+            ProdPrice.Text = ProdDGV.SelectedRows[0].Cells[3].Value.ToString();
 
         }
     }

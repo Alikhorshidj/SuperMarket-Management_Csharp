@@ -41,8 +41,8 @@ namespace SuperMarket
         
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 con.Open();
                 string query = "insert into CategoryTb1 values(" + CatIDTb.Text + ",'" + CatNameTb.Text + "','" + CatDescTb.Text + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -51,10 +51,10 @@ namespace SuperMarket
                 con.Close();
                 populate();
 
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //}catch(Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
 
         private void populate()
