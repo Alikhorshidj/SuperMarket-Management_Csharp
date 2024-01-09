@@ -139,10 +139,37 @@ namespace SuperMarket
                 else
                 {
                     con.Open();
-                    string query = "update SellerTb1 set ProdName='" + ProdName.Text + "', ProdQty='" + ProdQty.Text + "', ProdPrice='" + ProdPrice.Text + "', ProdCat='" + CatCb.SelectedValue.ToString() + "' where ProdId=" + ProdId.Text + ";";
+                    string query = "update ProduvtTb2 set ProdName='" + ProdName.Text + "', ProdQty='" + ProdQty.Text + "', ProdPrice='" + ProdPrice.Text + "', ProdCat='" + CatCb.SelectedValue.ToString() + "' where ProdId=" + ProdId.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Successfully Update");
+                    con.Close();
+                    populate();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ProdDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ProdId.Text == "")
+                {
+                    MessageBox.Show("Select The Product to Delete");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "delete from ProduvtTb2 where ProdId=" + ProdId.Text + "";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Deleted Successfully");
                     con.Close();
                     populate();
                 }

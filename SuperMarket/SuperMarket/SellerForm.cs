@@ -152,12 +152,17 @@ namespace SuperMarket
                 else
                 {
                     con.Open();
-                    string query = "delete from CategoryTb1 where CatId=" + SELID.Text + "";
+                    string query = "delete from SellerTb1 where SellerId=" + SELID.Text + "";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Seller Deleted Successfully");
                     con.Close();
                     populate();
+                    SELID.Text = "";
+                    NAMEID.Text = "";
+                    AGEID.Text = "";
+                    PHONEID.Text = "";
+                    PASSID.Text = "";
                 }
 
 
