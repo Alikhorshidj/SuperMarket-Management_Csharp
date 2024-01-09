@@ -46,14 +46,47 @@ namespace SuperMarket
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            ProductForm productForm = new ProductForm();
-            this.Hide();
-            productForm.Show();
+            if (UnameTb.Text == "" || PassTb.Text == "")
+            {
+                MessageBox.Show("Enter The UserName And Password");
+            }
+            else
+            {
+                if (RoleCb.SelectedItem.ToString() == "ADMIN")
+                {
+                    if (UnameTb.Text == "Admin" && PassTb.Text == "Admin")
+                    {
+                        ProductForm productForm = new ProductForm();
+                        this.Hide();
+                        productForm.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("You Insert Wrong Username or Password");
+                    }
+                }
+                else if (RoleCb.SelectedItem.ToString() == "SELLER")
+                {
+                    MessageBox.Show("You are a Seller");
+                }
+                else
+                {
+                    MessageBox.Show("You must Select a Role");
+
+                }
+            }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            UnameTb.Text = "";
+            PassTb.Text = "";
         }
     }
 }

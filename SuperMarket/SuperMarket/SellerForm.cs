@@ -52,7 +52,7 @@ namespace SuperMarket
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Seller Added Successfuly");
                 con.Close();
-                // populate();
+                populate();
 
             }
             catch (Exception ex)
