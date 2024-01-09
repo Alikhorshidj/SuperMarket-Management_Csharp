@@ -58,7 +58,7 @@ namespace SuperMarket
             try
             {
                 con.Open();
-                string query = "insert into ProduvtTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "','" + ProdQty.Text + "','"+ ProdPrice.Text +"')";
+                string query = "insert into ProduvtTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + ","+ ProdPrice.Text +",'"+CatCb.SelectedValue.ToString()+"')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Added Successfuly");
@@ -124,7 +124,35 @@ namespace SuperMarket
             ProdName.Text = ProdDGV.SelectedRows[0].Cells[1].Value.ToString();
             ProdQty.Text = ProdDGV.SelectedRows[0].Cells[2].Value.ToString();
             ProdPrice.Text = ProdDGV.SelectedRows[0].Cells[3].Value.ToString();
+            CatCb.SelectedValue = ProdDGV.SelectedRows[0].Cells[4].Value.ToString();
 
+        }
+
+        private void ProdEdit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ProdId.Text == "" || ProdName.Text == "" || ProdQty.Text == "" || ProdPrice.Text == "" || CatCb.Text == "")
+                {
+                    MessageBox.Show("Missing Informationa");
+                }
+                else
+                {
+                    con.Open();
+                    string query = "update SellerTb1 set ProdName='" + ProdName.Text + "', ProdQty='" + ProdQty.Text + "', ProdPrice='" + ProdPrice.Text + "', ProdCat='" + CatCb.SelectedValue.ToString() + "' where ProdId=" + ProdId.Text + ";";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Successfully Update");
+                    con.Close();
+                    populate();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

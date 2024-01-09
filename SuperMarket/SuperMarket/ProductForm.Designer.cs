@@ -229,6 +229,7 @@
             this.ProdEdit.Size = new System.Drawing.Size(84, 49);
             this.ProdEdit.TabIndex = 16;
             this.ProdEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ProdEdit.Click += new System.EventHandler(this.ProdEdit_Click);
             // 
             // ProdAdd
             // 

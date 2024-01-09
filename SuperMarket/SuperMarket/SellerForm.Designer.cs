@@ -28,18 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerForm));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PASSID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.SellerDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.SellerDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.SellerEdit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.PHONEID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AGEID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.NAMEID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.SELID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,31 +54,27 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.reflectionImage1 = new DevComponents.DotNetBar.Controls.ReflectionImage();
             this.reflectionImage2 = new DevComponents.DotNetBar.Controls.ReflectionImage();
             this.reflectionImage3 = new DevComponents.DotNetBar.Controls.ReflectionImage();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SellerDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkOrange;
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox5);
+            this.guna2Panel1.Controls.Add(this.PASSID);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton24);
             this.guna2Panel1.Controls.Add(this.comboBox2);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1);
-            this.guna2Panel1.Controls.Add(this.bunifuThinButton23);
-            this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
+            this.guna2Panel1.Controls.Add(this.SellerDGV);
+            this.guna2Panel1.Controls.Add(this.SellerDelete);
+            this.guna2Panel1.Controls.Add(this.SellerEdit);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton21);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox4);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox3);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.guna2Panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.guna2Panel1.Controls.Add(this.PHONEID);
+            this.guna2Panel1.Controls.Add(this.AGEID);
+            this.guna2Panel1.Controls.Add(this.NAMEID);
+            this.guna2Panel1.Controls.Add(this.SELID);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.label3);
@@ -87,28 +87,53 @@
             this.guna2Panel1.Size = new System.Drawing.Size(919, 590);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // bunifuMaterialTextbox5
+            // PASSID
             // 
-            this.bunifuMaterialTextbox5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox5.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(138, 315);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox5.MaxLength = 32767;
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox5.TabIndex = 21;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PASSID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.PASSID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.PASSID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.PASSID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PASSID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.PASSID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PASSID.HintForeColor = System.Drawing.Color.Empty;
+            this.PASSID.HintText = "";
+            this.PASSID.isPassword = false;
+            this.PASSID.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.PASSID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.PASSID.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.PASSID.LineThickness = 3;
+            this.PASSID.Location = new System.Drawing.Point(138, 315);
+            this.PASSID.Margin = new System.Windows.Forms.Padding(4);
+            this.PASSID.MaxLength = 32767;
+            this.PASSID.Name = "PASSID";
+            this.PASSID.Size = new System.Drawing.Size(169, 33);
+            this.PASSID.TabIndex = 21;
+            this.PASSID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuThinButton24
+            // 
+            this.bunifuThinButton24.ActiveBorderThickness = 1;
+            this.bunifuThinButton24.ActiveCornerRadius = 20;
+            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.bunifuThinButton24.BackColor = System.Drawing.Color.DarkOrange;
+            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
+            this.bunifuThinButton24.ButtonText = "Refresh";
+            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton24.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton24.IdleBorderThickness = 1;
+            this.bunifuThinButton24.IdleCornerRadius = 20;
+            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton24.Location = new System.Drawing.Point(783, 49);
+            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuThinButton24.Name = "bunifuThinButton24";
+            this.bunifuThinButton24.Size = new System.Drawing.Size(84, 42);
+            this.bunifuThinButton24.TabIndex = 20;
+            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox2
             // 
@@ -123,15 +148,15 @@
             this.comboBox2.TabIndex = 19;
             this.comboBox2.Text = "Select Category";
             // 
-            // guna2DataGridView1
+            // SellerDGV
             // 
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SellerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.SellerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.SellerDGV.BackgroundColor = System.Drawing.Color.White;
+            this.SellerDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SellerDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SellerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -139,8 +164,8 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.guna2DataGridView1.ColumnHeadersHeight = 25;
+            this.SellerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.SellerDGV.ColumnHeadersHeight = 25;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -148,129 +173,210 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(359, 101);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(536, 472);
-            this.guna2DataGridView1.TabIndex = 18;
-            this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 25;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SellerDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            this.SellerDGV.EnableHeadersVisualStyles = false;
+            this.SellerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerDGV.Location = new System.Drawing.Point(359, 101);
+            this.SellerDGV.Name = "SellerDGV";
+            this.SellerDGV.RowHeadersVisible = false;
+            this.SellerDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.SellerDGV.Size = new System.Drawing.Size(536, 472);
+            this.SellerDGV.TabIndex = 18;
+            this.SellerDGV.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.SellerDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.SellerDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.SellerDGV.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.SellerDGV.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.SellerDGV.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.SellerDGV.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.SellerDGV.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerDGV.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.SellerDGV.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.SellerDGV.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.SellerDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.SellerDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.SellerDGV.ThemeStyle.HeaderStyle.Height = 25;
+            this.SellerDGV.ThemeStyle.ReadOnly = false;
+            this.SellerDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.SellerDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.SellerDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.SellerDGV.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SellerDGV.ThemeStyle.RowsStyle.Height = 22;
+            this.SellerDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.SellerDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SellerDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SellerDGV_CellContentClick);
             // 
-            // bunifuMaterialTextbox4
+            // SellerDelete
             // 
-            this.bunifuMaterialTextbox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox4.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox4.HintText = "";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(139, 258);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.MaxLength = 32767;
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox4.TabIndex = 13;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SellerDelete.ActiveBorderThickness = 1;
+            this.SellerDelete.ActiveCornerRadius = 20;
+            this.SellerDelete.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.SellerDelete.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.SellerDelete.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.SellerDelete.BackColor = System.Drawing.Color.DarkOrange;
+            this.SellerDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SellerDelete.BackgroundImage")));
+            this.SellerDelete.ButtonText = "DELETE";
+            this.SellerDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SellerDelete.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.SellerDelete.IdleBorderThickness = 1;
+            this.SellerDelete.IdleCornerRadius = 20;
+            this.SellerDelete.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SellerDelete.IdleForecolor = System.Drawing.Color.Transparent;
+            this.SellerDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SellerDelete.Location = new System.Drawing.Point(224, 373);
+            this.SellerDelete.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.SellerDelete.Name = "SellerDelete";
+            this.SellerDelete.Size = new System.Drawing.Size(84, 49);
+            this.SellerDelete.TabIndex = 17;
+            this.SellerDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SellerDelete.Click += new System.EventHandler(this.SellerDelete_Click);
             // 
-            // bunifuMaterialTextbox3
+            // SellerEdit
             // 
-            this.bunifuMaterialTextbox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox3.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(139, 203);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.MaxLength = 32767;
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox3.TabIndex = 12;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SellerEdit.ActiveBorderThickness = 1;
+            this.SellerEdit.ActiveCornerRadius = 20;
+            this.SellerEdit.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.SellerEdit.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.SellerEdit.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.SellerEdit.BackColor = System.Drawing.Color.DarkOrange;
+            this.SellerEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SellerEdit.BackgroundImage")));
+            this.SellerEdit.ButtonText = "EDIT";
+            this.SellerEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SellerEdit.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.SellerEdit.IdleBorderThickness = 1;
+            this.SellerEdit.IdleCornerRadius = 20;
+            this.SellerEdit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SellerEdit.IdleForecolor = System.Drawing.Color.Transparent;
+            this.SellerEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SellerEdit.Location = new System.Drawing.Point(113, 373);
+            this.SellerEdit.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.SellerEdit.Name = "SellerEdit";
+            this.SellerEdit.Size = new System.Drawing.Size(84, 49);
+            this.SellerEdit.TabIndex = 16;
+            this.SellerEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SellerEdit.Click += new System.EventHandler(this.SellerEdit_Click);
             // 
-            // bunifuMaterialTextbox2
+            // bunifuThinButton21
             // 
-            this.bunifuMaterialTextbox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(139, 149);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.MaxLength = 32767;
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox2.TabIndex = 11;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.OrangeRed;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.SystemColors.Window;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.OrangeRed;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.DarkOrange;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "ADD";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Transparent;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(17, 373);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(84, 49);
+            this.bunifuThinButton21.TabIndex = 15;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // bunifuMaterialTextbox1
+            // PHONEID
             // 
-            this.bunifuMaterialTextbox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(139, 97);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.MaxLength = 32767;
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(169, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 10;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PHONEID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.PHONEID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.PHONEID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.PHONEID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PHONEID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.PHONEID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PHONEID.HintForeColor = System.Drawing.Color.Empty;
+            this.PHONEID.HintText = "";
+            this.PHONEID.isPassword = false;
+            this.PHONEID.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.PHONEID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.PHONEID.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.PHONEID.LineThickness = 3;
+            this.PHONEID.Location = new System.Drawing.Point(139, 258);
+            this.PHONEID.Margin = new System.Windows.Forms.Padding(4);
+            this.PHONEID.MaxLength = 32767;
+            this.PHONEID.Name = "PHONEID";
+            this.PHONEID.Size = new System.Drawing.Size(169, 33);
+            this.PHONEID.TabIndex = 13;
+            this.PHONEID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // AGEID
+            // 
+            this.AGEID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.AGEID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.AGEID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.AGEID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AGEID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.AGEID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AGEID.HintForeColor = System.Drawing.Color.Empty;
+            this.AGEID.HintText = "";
+            this.AGEID.isPassword = false;
+            this.AGEID.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.AGEID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.AGEID.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.AGEID.LineThickness = 3;
+            this.AGEID.Location = new System.Drawing.Point(139, 203);
+            this.AGEID.Margin = new System.Windows.Forms.Padding(4);
+            this.AGEID.MaxLength = 32767;
+            this.AGEID.Name = "AGEID";
+            this.AGEID.Size = new System.Drawing.Size(169, 33);
+            this.AGEID.TabIndex = 12;
+            this.AGEID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AGEID.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
+            // 
+            // NAMEID
+            // 
+            this.NAMEID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.NAMEID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.NAMEID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.NAMEID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NAMEID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.NAMEID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NAMEID.HintForeColor = System.Drawing.Color.Empty;
+            this.NAMEID.HintText = "";
+            this.NAMEID.isPassword = false;
+            this.NAMEID.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.NAMEID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.NAMEID.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.NAMEID.LineThickness = 3;
+            this.NAMEID.Location = new System.Drawing.Point(139, 149);
+            this.NAMEID.Margin = new System.Windows.Forms.Padding(4);
+            this.NAMEID.MaxLength = 32767;
+            this.NAMEID.Name = "NAMEID";
+            this.NAMEID.Size = new System.Drawing.Size(169, 33);
+            this.NAMEID.TabIndex = 11;
+            this.NAMEID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // SELID
+            // 
+            this.SELID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.SELID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.SELID.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.SELID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SELID.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.SELID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.SELID.HintForeColor = System.Drawing.Color.Empty;
+            this.SELID.HintText = "";
+            this.SELID.isPassword = false;
+            this.SELID.LineFocusedColor = System.Drawing.Color.OrangeRed;
+            this.SELID.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.SELID.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
+            this.SELID.LineThickness = 3;
+            this.SELID.Location = new System.Drawing.Point(139, 97);
+            this.SELID.Margin = new System.Windows.Forms.Padding(4);
+            this.SELID.MaxLength = 32767;
+            this.SELID.Name = "SELID";
+            this.SELID.Size = new System.Drawing.Size(169, 33);
+            this.SELID.TabIndex = 10;
+            this.SELID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.SELID.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
             // 
             // label6
             // 
@@ -392,106 +498,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Refresh";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton24.Location = new System.Drawing.Point(783, 49);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(84, 42);
-            this.bunifuThinButton24.TabIndex = 20;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton23
-            // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton23.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "DELETE";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton23.Location = new System.Drawing.Point(224, 373);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(84, 49);
-            this.bunifuThinButton23.TabIndex = 17;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton22.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "EDIT";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(113, 373);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(84, 49);
-            this.bunifuThinButton22.TabIndex = 16;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.SystemColors.Window;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.OrangeRed;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.DarkOrange;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "ADD";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(17, 373);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(84, 49);
-            this.bunifuThinButton21.TabIndex = 15;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // reflectionImage1
             // 
             // 
@@ -545,9 +551,10 @@
             this.Name = "SellerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellerForm";
+            this.Load += new System.EventHandler(this.SellerForm_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SellerDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -557,14 +564,14 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private System.Windows.Forms.ComboBox comboBox2;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Guna.UI2.WinForms.Guna2DataGridView SellerDGV;
+        private Bunifu.Framework.UI.BunifuThinButton2 SellerDelete;
+        private Bunifu.Framework.UI.BunifuThinButton2 SellerEdit;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PHONEID;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AGEID;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox NAMEID;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox SELID;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
@@ -575,7 +582,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PASSID;
         private DevComponents.DotNetBar.Controls.ReflectionImage reflectionImage1;
         private DevComponents.DotNetBar.Controls.ReflectionImage reflectionImage2;
         private DevComponents.DotNetBar.Controls.ReflectionImage reflectionImage3;
