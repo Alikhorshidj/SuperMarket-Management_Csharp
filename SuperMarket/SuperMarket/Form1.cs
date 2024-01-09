@@ -52,22 +52,26 @@ namespace SuperMarket
             }
             else
             {
-                if (RoleCb.SelectedItem.ToString() == "ADMIN")
+                if (RoleCb.SelectedIndex > -1)
                 {
-                    if (UnameTb.Text == "Admin" && PassTb.Text == "Admin")
+
+                    if (RoleCb.SelectedItem.ToString() == "ADMIN")
                     {
-                        ProductForm productForm = new ProductForm();
-                        this.Hide();
-                        productForm.Show();
+                        if (UnameTb.Text == "Admin" && PassTb.Text == "Admin")
+                        {
+                            ProductForm productForm = new ProductForm();
+                            this.Hide();
+                            productForm.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("You Insert Wrong Username or Password");
+                        }
                     }
-                    else
+                    else if (RoleCb.SelectedItem.ToString() == "SELLER")
                     {
-                        MessageBox.Show("You Insert Wrong Username or Password");
+                        MessageBox.Show("You are a Seller");
                     }
-                }
-                else if (RoleCb.SelectedItem.ToString() == "SELLER")
-                {
-                    MessageBox.Show("You are a Seller");
                 }
                 else
                 {
