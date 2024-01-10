@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace SuperMarket
 {
@@ -16,6 +18,10 @@ namespace SuperMarket
         {
             InitializeComponent();
         }
+
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
+
+        public static string Sellername = "";
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {

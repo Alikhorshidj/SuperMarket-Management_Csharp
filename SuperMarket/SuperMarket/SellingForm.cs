@@ -61,6 +61,7 @@ namespace SuperMarket
         {
             ProdName.Text = ProdDGV2.SelectedRows[0].Cells[0].Value.ToString();
             ProdPrice.Text = ProdDGV2.SelectedRows[0].Cells[1].Value.ToString();
+            flag = 1;
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
