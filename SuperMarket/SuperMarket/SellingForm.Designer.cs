@@ -67,6 +67,7 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SellerNamelbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BillsDGV)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderDGV)).BeginInit();
@@ -129,6 +130,7 @@
             this.BillsDGV.ThemeStyle.RowsStyle.Height = 22;
             this.BillsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BillsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BillsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BillsDGV_CellContentClick);
             // 
             // button5
             // 
@@ -147,6 +149,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkOrange;
+            this.guna2Panel1.Controls.Add(this.SellerNamelbl);
             this.guna2Panel1.Controls.Add(this.label7);
             this.guna2Panel1.Controls.Add(this.OrderDGV);
             this.guna2Panel1.Controls.Add(this.Amdlbl);
@@ -514,6 +517,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(84, 49);
             this.bunifuThinButton21.TabIndex = 15;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // ProdPrice
             // 
@@ -659,6 +663,17 @@
             this.TotalPrice.HeaderText = "TotalPrice";
             this.TotalPrice.Name = "TotalPrice";
             // 
+            // SellerNamelbl
+            // 
+            this.SellerNamelbl.AutoSize = true;
+            this.SellerNamelbl.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SellerNamelbl.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.SellerNamelbl.Location = new System.Drawing.Point(94, 14);
+            this.SellerNamelbl.Name = "SellerNamelbl";
+            this.SellerNamelbl.Size = new System.Drawing.Size(70, 29);
+            this.SellerNamelbl.TabIndex = 31;
+            this.SellerNamelbl.Text = "Seller";
+            // 
             // SellingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -711,5 +726,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
+        private System.Windows.Forms.Label SellerNamelbl;
     }
 }

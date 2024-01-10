@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 
 namespace SuperMarket
@@ -34,11 +35,23 @@ namespace SuperMarket
             con.Close();
 
         }
+        private void populatebills()
+        {
+            con.Open();
+            string query = "select * from BillTb1";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            BillsDGV.DataSource = ds.Tables[0];
+            con.Close();
 
+        }
 
         private void SellingForm_Load(object sender, EventArgs e)
         {
             populate();
+            populatebills();
         }
 
         private void ProdDGV2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -77,14 +90,40 @@ namespace SuperMarket
                 OrderDGV.Rows.Add(newRow);
                 n++;
                 Grdtotal = Grdtotal + total;
-                Amdlbl.Text =  Grdtotal + "Rs";
+                Amdlbl.Text =  ""+Grdtotal ;
             }
 
 
         }
 
 
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
 
+            if(BillId.Text == "")
+            {
+                MessageBox.Show("Missing to insert Bill Id");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string query = "insert into BillTb1 values(" + BillId.Text + ",'" + SellerNamelbl.Text + "','" + Datelbl.Text + "'," + Amdlbl.Text + ")";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Order Added Successfuly");
+                    con.Close();
+                    populatebills();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+          
+        }
 
 
 
@@ -124,6 +163,11 @@ namespace SuperMarket
             Application.Exit();
         }
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BillsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
