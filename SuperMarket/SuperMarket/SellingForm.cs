@@ -52,7 +52,10 @@ namespace SuperMarket
         {
             populate();
             populatebills();
+            FillCombo();
         }
+
+        int flag = 0;
 
         private void ProdDGV2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -125,18 +128,62 @@ namespace SuperMarket
           
         }
 
+        private void BillsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            flag = 1;
+        }
 
 
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString("SuperMarket", new Font("Century Gothic", 25, FontStyle.Bold), Brushes.Red, new Point(230));
+            e.Graphics.DrawString("Bill ID:" + BillsDGV.SelectedRows[0].Cells[0].Value.ToString(), new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Blue, new Point(70,100));
+            e.Graphics.DrawString("SellerName:" + BillsDGV.SelectedRows[0].Cells[1].Value.ToString(), new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Blue, new Point(70,120));
+            e.Graphics.DrawString("Date:" + BillsDGV.SelectedRows[0].Cells[2].Value.ToString(), new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Blue, new Point(70,140));
+            e.Graphics.DrawString("Total Amount:" + BillsDGV.SelectedRows[0].Cells[3].Value.ToString(), new Font("Century Gothic", 15, FontStyle.Bold), Brushes.Blue, new Point(70,160));
+            e.Graphics.DrawString("Welcome", new Font("Century Gothic", 25, FontStyle.Italic), Brushes.Black, new Point(230,230));
+        }
 
 
+        private void CatEdit_Click(object sender, EventArgs e)
+        {
+            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.Print();
+
+            }
+        }
 
 
+        private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "select ProdName,ProdPrice from ProduvtTb2 where ProdCat='"+SearchCb.SelectedValue.ToString()+"'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ProdDGV2.DataSource = ds.Tables[0];
+            con.Close();
+        }
 
+        private void FillCombo()
+        {
+            //This Metod Will bind the ComboBox with the Database
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select CatName from CategoryTb1", con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("CatName", typeof(string));
+            dt.Load(rdr);
+           // CatCb.ValueMember = "CatName";
+          //  CatCb.DataSource = dt;
+                       SearchCb.ValueMember = "CatName";
+                       SearchCb.DataSource = dt;
 
+            con.Close();
 
-
-
-
+        }
 
 
 
@@ -167,9 +214,11 @@ namespace SuperMarket
 
         }
 
-        private void BillsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-
+            populate();
         }
+
+
     }
 }

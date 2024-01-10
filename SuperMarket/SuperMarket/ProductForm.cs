@@ -30,7 +30,10 @@ namespace SuperMarket
             dt.Load(rdr);
             CatCb.ValueMember = "CatName";
             CatCb.DataSource = dt;
-          con.Close();
+            SearchCb.ValueMember = "CatName";
+            SearchCb.DataSource = dt;
+
+            con.Close();
 
         }
 
@@ -180,6 +183,19 @@ namespace SuperMarket
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "select * from ProduvtTb1 where ProdCat=";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ProdDGV.DataSource = ds.Tables[0];
+            con.Close();
+
         }
     }
 }

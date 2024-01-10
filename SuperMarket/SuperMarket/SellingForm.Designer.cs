@@ -48,7 +48,7 @@
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ProdDGV2 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SearchCb = new System.Windows.Forms.ComboBox();
             this.ProdQty = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.Datelbl = new System.Windows.Forms.Label();
@@ -68,6 +68,8 @@
             this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SellerNamelbl = new System.Windows.Forms.Label();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.BillsDGV)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderDGV)).BeginInit();
@@ -157,7 +159,7 @@
             this.guna2Panel1.Controls.Add(this.bunifuThinButton22);
             this.guna2Panel1.Controls.Add(this.bunifuThinButton24);
             this.guna2Panel1.Controls.Add(this.ProdDGV2);
-            this.guna2Panel1.Controls.Add(this.comboBox1);
+            this.guna2Panel1.Controls.Add(this.SearchCb);
             this.guna2Panel1.Controls.Add(this.ProdQty);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.Datelbl);
@@ -326,6 +328,7 @@
             this.bunifuThinButton24.Size = new System.Drawing.Size(84, 42);
             this.bunifuThinButton24.TabIndex = 25;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // ProdDGV2
             // 
@@ -385,18 +388,19 @@
             this.ProdDGV2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.ProdDGV2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProdDGV2_CellContentClick);
             // 
-            // comboBox1
+            // SearchCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.SearchCb.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchCb.FormattingEnabled = true;
+            this.SearchCb.Items.AddRange(new object[] {
             "ADMIN",
             "SELLER"});
-            this.comboBox1.Location = new System.Drawing.Point(28, 317);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 31);
-            this.comboBox1.TabIndex = 23;
-            this.comboBox1.Text = "Select Category";
+            this.SearchCb.Location = new System.Drawing.Point(28, 317);
+            this.SearchCb.Name = "SearchCb";
+            this.SearchCb.Size = new System.Drawing.Size(169, 31);
+            this.SearchCb.TabIndex = 23;
+            this.SearchCb.Text = "Select Category";
+            this.SearchCb.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
             // 
             // ProdQty
             // 
@@ -477,7 +481,7 @@
             this.CatEdit.ActiveLineColor = System.Drawing.Color.OrangeRed;
             this.CatEdit.BackColor = System.Drawing.Color.DarkOrange;
             this.CatEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CatEdit.BackgroundImage")));
-            this.CatEdit.ButtonText = "EDIT";
+            this.CatEdit.ButtonText = "Print";
             this.CatEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CatEdit.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CatEdit.ForeColor = System.Drawing.Color.SeaGreen;
@@ -492,6 +496,7 @@
             this.CatEdit.Size = new System.Drawing.Size(84, 49);
             this.CatEdit.TabIndex = 16;
             this.CatEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CatEdit.Click += new System.EventHandler(this.CatEdit_Click);
             // 
             // bunifuThinButton21
             // 
@@ -674,6 +679,22 @@
             this.SellerNamelbl.TabIndex = 31;
             this.SellerNamelbl.Text = "Seller";
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.DocumentName = " ";
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // SellingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -714,7 +735,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox ProdQty;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2DataGridView ProdDGV2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SearchCb;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.Label label7;
@@ -727,5 +748,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
         private System.Windows.Forms.Label SellerNamelbl;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
