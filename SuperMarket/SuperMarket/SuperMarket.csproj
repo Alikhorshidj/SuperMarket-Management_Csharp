@@ -130,6 +130,9 @@
     <EmbeddedResource Include="SellerForm.resx">
       <DependentUpon>SellerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SellingForm.resx">
+      <DependentUpon>SellingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
