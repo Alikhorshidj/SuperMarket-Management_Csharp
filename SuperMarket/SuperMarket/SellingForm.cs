@@ -41,23 +41,45 @@ namespace SuperMarket
             populate();
         }
 
-        int Grdtotal = 0;
+        private void ProdDGV2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ProdName.Text = ProdDGV2.SelectedRows[0].Cells[0].Value.ToString();
+            ProdPrice.Text = ProdDGV2.SelectedRows[0].Cells[1].Value.ToString();
+        }
 
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
+        }
+
+        int Grdtotal = 0;
+        int n = 0;
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int n = 0;
-            int total = Convert.ToInt32(ProdPrice.Text) * Convert.ToInt32(ProdQty.Text);
+            
+            
+            if(ProdName.Text == "" || ProdQty.Text == "")
+            {
+                MessageBox.Show("Select atleast one Product");
+            }
+            else
+            {
+                
+                int total = Convert.ToInt32(ProdPrice.Text) * Convert.ToInt32(ProdQty.Text);
 
-            DataGridViewRow newRow = new DataGridViewRow();
-            newRow.CreateCells(OrderDGV);
-            newRow.Cells[0].Value = n + 1;
-            newRow.Cells[1].Value = ProdName.Text;
-            newRow.Cells[2].Value = ProdPrice.Text;
-            newRow.Cells[3].Value = ProdQty.Text;
-            newRow.Cells[4].Value = Convert.ToInt32(ProdPrice.Text) * Convert.ToInt32(ProdQty.Text);
-            OrderDGV.Rows.Add(newRow);
-            Grdtotal = Grdtotal + total;
-            Amdlbl.Text = "Rs" + Grdtotal;
+                DataGridViewRow newRow = new DataGridViewRow();
+                newRow.CreateCells(OrderDGV);
+                newRow.Cells[0].Value = n + 1;
+                newRow.Cells[1].Value = ProdName.Text;
+                newRow.Cells[2].Value = ProdPrice.Text;
+                newRow.Cells[3].Value = ProdQty.Text;
+                newRow.Cells[4].Value = Convert.ToInt32(ProdPrice.Text) * Convert.ToInt32(ProdQty.Text);
+                OrderDGV.Rows.Add(newRow);
+                n++;
+                Grdtotal = Grdtotal + total;
+                Amdlbl.Text =  Grdtotal + "Rs";
+            }
+
 
         }
 
@@ -101,18 +123,6 @@ namespace SuperMarket
         {
             Application.Exit();
         }
-
-        private void ProdDGV2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            ProdName.Text = ProdDGV2.SelectedRows[0].Cells[0].Value.ToString();
-            ProdPrice.Text = ProdDGV2.SelectedRows[0].Cells[1].Value.ToString();
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            Datelbl.Text = DateTime.Today.Day.ToString() + "/" + DateTime.Today.Month.ToString() + "/" + DateTime.Today.Year.ToString();
-        }
-
         private void label7_Click(object sender, EventArgs e)
         {
 
