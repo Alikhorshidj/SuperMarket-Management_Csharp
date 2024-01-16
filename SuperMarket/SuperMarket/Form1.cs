@@ -19,7 +19,7 @@ namespace SuperMarket
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=LAPTOP-ENHDEN5K;Initial Catalog=smarket;Integrated Security=True");
 
         public static string Sellername = "";
 
@@ -65,6 +65,7 @@ namespace SuperMarket
                     {
                         if (UnameTb.Text == "Admin" && PassTb.Text == "Admin")
                         {
+                            Sellername = UnameTb.Text;
                             ProductForm productForm = new ProductForm();
                             this.Hide();
                             productForm.Show();
@@ -76,7 +77,26 @@ namespace SuperMarket
                     }
                     else if (RoleCb.SelectedItem.ToString() == "SELLER")
                     {
-                        MessageBox.Show("You are a Seller");
+                        //MessageBox.Show("You are a Seller");
+
+                        Con.Open();
+                        SqlDataAdapter sda = new SqlDataAdapter("Select count(8) from SellerTb1 where SellerName='" + UnameTb.Text + "' and SellerPass='" + PassTb.Text + "'", Con);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        if (dt.Rows[0][0].ToString() == "1")
+                        {
+                            Sellername = UnameTb.Text;
+                            SellingForm sell = new SellingForm();
+                            sell.Show();
+                            this.Hide();
+                            Con.Close();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Wrong Username or Password");
+                        }
+                        Con.Close();
                     }
                 }
                 else
@@ -97,6 +117,11 @@ namespace SuperMarket
         {
             UnameTb.Text = "";
             PassTb.Text = "";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

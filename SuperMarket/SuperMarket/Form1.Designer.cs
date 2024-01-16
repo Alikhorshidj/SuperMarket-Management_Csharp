@@ -76,7 +76,7 @@
             this.PassTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.PassTb.HintForeColor = System.Drawing.Color.Empty;
             this.PassTb.HintText = "";
-            this.PassTb.isPassword = false;
+            this.PassTb.isPassword = true;
             this.PassTb.LineFocusedColor = System.Drawing.Color.OrangeRed;
             this.PassTb.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.PassTb.LineMouseHoverColor = System.Drawing.Color.OrangeRed;
@@ -221,6 +221,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -134,5 +134,19 @@ namespace SuperMarket
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SellingForm sell = new SellingForm();
+            sell.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 ff = new Form1();
+            ff.Show();
+            this.Hide();
+        }
     }
 }

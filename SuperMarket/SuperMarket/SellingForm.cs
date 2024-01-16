@@ -53,6 +53,7 @@ namespace SuperMarket
             populate();
             populatebills();
             FillCombo();
+            SellerNamelbl.Text = Form1.Sellername;
         }
 
         int flag = 0;
@@ -220,6 +221,11 @@ namespace SuperMarket
             populate();
         }
 
-
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 ff = new Form1();
+            ff.Show();
+            this.Hide();
+        }
     }
 }

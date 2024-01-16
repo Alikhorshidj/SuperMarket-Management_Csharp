@@ -187,15 +187,29 @@ namespace SuperMarket
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            con.Open();
-            string query = "select * from ProduvtTb1 where ProdCat=";
-            SqlDataAdapter sda = new SqlDataAdapter(query, con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            ProdDGV.DataSource = ds.Tables[0];
-            con.Close();
+        //    con.Open();
+        //    string query = "select * from ProduvtTb1 where ProdCat=";
+        //    SqlDataAdapter sda = new SqlDataAdapter(query, con);
+        //    SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+        //    var ds = new DataSet();
+        //    sda.Fill(ds);
+        //    ProdDGV.DataSource = ds.Tables[0];
+        //   con.Close();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SellingForm sell = new SellingForm();
+            sell.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 ff = new Form1();
+            ff.Show();
+            this.Hide();
         }
     }
 }
