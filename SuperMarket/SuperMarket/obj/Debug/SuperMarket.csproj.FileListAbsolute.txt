@@ -28,3 +28,5 @@ E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.CategoryForm.resources
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.SellerForm.resources
 E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.SellingForm.resources
+E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.EPCat.resources
+E:\All Projects\Programming\C#\GitHub\SuperMarket-Management_Csharp\SuperMarket\SuperMarket\obj\Debug\SuperMarket.EPProd.resources

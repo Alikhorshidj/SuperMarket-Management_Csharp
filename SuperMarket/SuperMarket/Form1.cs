@@ -66,9 +66,9 @@ namespace SuperMarket
                         if (UnameTb.Text == "Admin" && PassTb.Text == "Admin")
                         {
                             Sellername = UnameTb.Text;
-                            ProductForm productForm = new ProductForm();
+                            SellerForm SForm = new SellerForm();
                             this.Hide();
-                            productForm.Show();
+                            SForm.Show();
                         }
                         else
                         {
@@ -97,6 +97,20 @@ namespace SuperMarket
                             MessageBox.Show("Wrong Username or Password");
                         }
                         Con.Close();
+                    }
+                    else if (RoleCb.SelectedItem.ToString() == "EntrePot")
+                    {
+                        if (UnameTb.Text == "entrepot" && PassTb.Text == "EP123456")
+                        {
+                            EPProd epp = new EPProd();
+                            epp.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("You Insert Wrong Username or Password");
+                        }
+
                     }
                 }
                 else

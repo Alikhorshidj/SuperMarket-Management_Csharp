@@ -76,6 +76,18 @@
     <Compile Include="CategoryForm.Designer.cs">
       <DependentUpon>CategoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EPCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPCat.Designer.cs">
+      <DependentUpon>EPCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EPProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EPProd.Designer.cs">
+      <DependentUpon>EPProd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     </Compile>
     <EmbeddedResource Include="CategoryForm.resx">
       <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPCat.resx">
+      <DependentUpon>EPCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EPProd.resx">
+      <DependentUpon>EPProd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
