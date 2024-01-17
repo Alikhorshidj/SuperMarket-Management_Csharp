@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.button5 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // UnameTb
@@ -202,12 +203,24 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(259, 343);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 23);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "SignUp Page";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(773, 375);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label5);
@@ -241,6 +254,7 @@
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label4;
     }
 }
 

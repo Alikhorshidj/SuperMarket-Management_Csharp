@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SellerForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.PASSID = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -87,6 +87,7 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(919, 590);
             this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // PASSID
             // 
@@ -110,6 +111,7 @@
             this.PASSID.Size = new System.Drawing.Size(169, 33);
             this.PASSID.TabIndex = 21;
             this.PASSID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PASSID.OnValueChanged += new System.EventHandler(this.PASSID_OnValueChanged);
             // 
             // bunifuThinButton24
             // 
@@ -151,30 +153,30 @@
             // 
             // SellerDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.SellerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SellerDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.SellerDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SellerDGV.BackgroundColor = System.Drawing.Color.White;
             this.SellerDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SellerDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.SellerDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SellerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SellerDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.SellerDGV.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SellerDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SellerDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SellerDGV.EnableHeadersVisualStyles = false;
             this.SellerDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SellerDGV.Location = new System.Drawing.Point(359, 101);
@@ -307,6 +309,7 @@
             this.PHONEID.Size = new System.Drawing.Size(169, 33);
             this.PHONEID.TabIndex = 13;
             this.PHONEID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PHONEID.OnValueChanged += new System.EventHandler(this.PHONEID_OnValueChanged);
             // 
             // AGEID
             // 
@@ -354,6 +357,7 @@
             this.NAMEID.Size = new System.Drawing.Size(169, 33);
             this.NAMEID.TabIndex = 11;
             this.NAMEID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NAMEID.OnValueChanged += new System.EventHandler(this.NAMEID_OnValueChanged);
             // 
             // SELID
             // 
@@ -389,6 +393,7 @@
             this.label6.Size = new System.Drawing.Size(119, 29);
             this.label6.TabIndex = 9;
             this.label6.Text = "PASSWORD";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -400,6 +405,7 @@
             this.label5.Size = new System.Drawing.Size(74, 29);
             this.label5.TabIndex = 8;
             this.label5.Text = "PHONE";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -423,6 +429,7 @@
             this.label1.Size = new System.Drawing.Size(65, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "NAME";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -434,6 +441,7 @@
             this.label2.Size = new System.Drawing.Size(37, 29);
             this.label2.TabIndex = 5;
             this.label2.Text = "ID ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button4
             // 

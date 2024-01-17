@@ -160,7 +160,7 @@ namespace SuperMarket
         private void comboBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
             con.Open();
-            string query = "select ProdName,ProdPrice from ProduvtTb2 where ProdCat='"+SearchCb.SelectedValue.ToString()+"'";
+            string query = "select ProdName,ProdPriceS from ProductTb2 where ProdCat='"+SearchCb.SelectedValue.ToString()+"'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();

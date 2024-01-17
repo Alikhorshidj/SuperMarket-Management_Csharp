@@ -137,5 +137,12 @@ namespace SuperMarket
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            SignUp rr = new SignUp();
+            rr.Show();
+            this.Hide();
+        }
     }
 }
