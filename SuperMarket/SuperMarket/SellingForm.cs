@@ -26,7 +26,7 @@ namespace SuperMarket
         private void populate()
         {
             con.Open();
-            string query = "select ProdName,ProdPrice from ProduvtTb2";
+            string query = "select ProdName,ProdPriceS from ProductTb2";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -179,7 +179,7 @@ namespace SuperMarket
             dt.Columns.Add("CatName", typeof(string));
             dt.Load(rdr);
            // CatCb.ValueMember = "CatName";
-          //  CatCb.DataSource = dt;
+           //  CatCb.DataSource = dt;
                        SearchCb.ValueMember = "CatName";
                        SearchCb.DataSource = dt;
 

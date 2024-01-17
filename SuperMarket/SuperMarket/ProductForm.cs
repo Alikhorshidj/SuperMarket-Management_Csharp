@@ -46,7 +46,7 @@ namespace SuperMarket
         private void populate()
         {
             con.Open();
-            string query = "select * from ProduvtTb2";
+            string query = "select * from ProductTb2";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -61,7 +61,7 @@ namespace SuperMarket
             try
             {
                 con.Open();
-                string query = "insert into ProduvtTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + ","+ ProdPrice.Text +",'"+CatCb.SelectedValue.ToString()+"')";
+                string query = "insert into ProductTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + ","+ ProdPrice.Text + ",'"+ (Convert.ToInt32(ProdPrice.Text) + ((Convert.ToInt32(ProdPrice.Text))*20/100)) +"','" + CatCb.SelectedValue.ToString()+"')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Added Successfuly");
@@ -127,7 +127,7 @@ namespace SuperMarket
             ProdName.Text = ProdDGV.SelectedRows[0].Cells[1].Value.ToString();
             ProdQty.Text = ProdDGV.SelectedRows[0].Cells[2].Value.ToString();
             ProdPrice.Text = ProdDGV.SelectedRows[0].Cells[3].Value.ToString();
-            CatCb.SelectedValue = ProdDGV.SelectedRows[0].Cells[4].Value.ToString();
+            CatCb.SelectedValue = ProdDGV.SelectedRows[0].Cells[5].Value.ToString();
 
         }
 
@@ -142,7 +142,7 @@ namespace SuperMarket
                 else
                 {
                     con.Open();
-                    string query = "update ProduvtTb2 set ProdName='" + ProdName.Text + "', ProdQty='" + ProdQty.Text + "', ProdPrice='" + ProdPrice.Text + "', ProdCat='" + CatCb.SelectedValue.ToString() + "' where ProdId=" + ProdId.Text + ";";
+                    string query = "update ProductTb2 set ProdName='" + ProdName.Text + "', ProdQty='" + ProdQty.Text + "', ProdPriceM='" + ProdPrice.Text + "', ProdPriceS='"+ (Convert.ToInt32(ProdPrice.Text) + ((Convert.ToInt32(ProdPrice.Text))*20/100)) +"', ProdCat='" + CatCb.SelectedValue.ToString() + "' where ProdId=" + ProdId.Text + ";";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Successfully Update");
@@ -169,7 +169,7 @@ namespace SuperMarket
                 else
                 {
                     con.Open();
-                    string query = "delete from ProduvtTb2 where ProdId=" + ProdId.Text + "";
+                    string query = "delete from ProductTb2 where ProdId=" + ProdId.Text + "";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Deleted Successfully");
