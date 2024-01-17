@@ -62,7 +62,7 @@ namespace SuperMarket
             try
             {
                 con.Open();
-                string query = "insert into ProductTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + "," + ProdPrice.Text + ",'"+ (Convert.ToInt32(ProdPrice.Text) + ((Convert.ToInt32(ProdPrice.Text))*20/100)) +"','" + CatCb.SelectedValue.ToString() + "')";
+                string query = "insert into ProductTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + "," + ProdPrice.Text + ",'"+ (Convert.ToInt64(ProdPrice.Text) + ((Convert.ToInt64(ProdPrice.Text))*20/100)) +"','" + CatCb.SelectedValue.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Product Added Successfuly");

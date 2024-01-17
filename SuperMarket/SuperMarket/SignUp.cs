@@ -29,12 +29,11 @@ namespace SuperMarket
             }
            // else if (Convert.ToInt64(SELID.Text) <= 1000000000 || Convert.ToInt64(SELID.Text) >= 9999999999)
            // {
-           //     MessageBox.Show("Your ID Not True");
+           //    MessageBox.Show("Your ID Not True");
            // }
             else
             {
-                try
-                {
+
                     con.Open();
                     string query = "insert into SellerTb1 values(" + SELID.Text + ",'" + NAMEID.Text + "'," + AGEID.Text + "," + PHONEID.Text + ",'" + PASSID.Text + "')";
                     SqlCommand cmd = new SqlCommand(query, con);
@@ -47,11 +46,6 @@ namespace SuperMarket
                     PHONEID.Text = "";
                     PASSID.Text = "";
  
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
             }
 
         }
