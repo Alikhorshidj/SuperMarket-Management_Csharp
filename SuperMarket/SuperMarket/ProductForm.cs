@@ -99,7 +99,8 @@ namespace SuperMarket
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are you want to close program", "Close Program", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -215,6 +216,13 @@ namespace SuperMarket
         private void CatCb_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ProductForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.C)
+                if (MessageBox.Show("Are you want to close program", "Close Program", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    Application.Exit();
         }
     }
 }
