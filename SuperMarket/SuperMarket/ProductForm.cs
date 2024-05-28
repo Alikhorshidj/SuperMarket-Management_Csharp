@@ -58,7 +58,7 @@ namespace SuperMarket
 
         private void ProdAdd_Click(object sender, EventArgs e)
         {
-            ==try
+            try
             {
                 con.Open();
                 string query = "insert into ProductTb2 values(" + ProdId.Text + ",'" + ProdName.Text + "'," + ProdQty.Text + ","+ ProdPrice.Text + ",'"+ (Convert.ToInt32(ProdPrice.Text) + ((Convert.ToInt32(ProdPrice.Text))*20/100)) +"','" + CatCb.SelectedValue.ToString()+"')";
